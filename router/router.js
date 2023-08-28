@@ -16,11 +16,11 @@ router.get('/post', (req,res)=>{
 router.post('/cadastrarUsuario', (req,res)=>{
     const {nome, bio, email, senha} = req.body
     usuarios.push({
-        id: id,
-        nome:nome,
-        bio:bio,
-        email:email,
-        senha:senha
+        id,
+        nome,
+        bio,
+        email,
+        senha
     })
     id++
     res.json(usuarios)
